@@ -6,10 +6,6 @@ class Background:
     def __init__(self, ai_game):
         """Initialize attributes for class."""
         self.screen = ai_game.screen
-        # You originally made a typo in describing
-        # your attribute, which lead to a traceback
-        # report of your mistake. 
-        # "Background object has no self.screen_rect attribute."
         self.screen_rect = self.screen.get_rect()
 
         self.image = pygame.image.load('images/space.bmp')
