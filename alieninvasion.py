@@ -23,9 +23,6 @@ class AlienInvasion:
         pygame.init()
         # Initialize mixer for background music.
         mixer.init()
-        # Remember how module imports work?
-        # You can always access them directly
-        # when you give the name of the module.
         mixer.music.load('audio/arcade.mp3')
         mixer.music.play(-1)
         self.settings = Settings()
@@ -34,7 +31,6 @@ class AlienInvasion:
         # window.
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         # Displays caption for the name of the window.
-        # Just like the title tag does for an HTML document.
         self.window_caption = pygame.display.set_caption('Alien Invasion')
 
         self.ship = Ship(self)
@@ -68,11 +64,6 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     sys.exit()
                 elif event.type == pygame.KEYDOWN:
-                    # Remember, anytime you are comparing
-                    # an event.type against a specific event.
-                    # You specify that in the following block
-                    # or else Python won't know what to do because
-                    # you didn't give specifity.
                     self._check_keydown_events(event)
 
                 elif event.type == pygame.KEYUP:
