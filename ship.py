@@ -1,7 +1,3 @@
-# We import pygame in this
-# module because of the functionality
-# we need to add in this class, which is
-# located in pygame.
 import pygame
 
 class Ship:
@@ -22,7 +18,6 @@ class Ship:
 
         # Start the ship element at the bottom center
         # of the screen.
-        # This line is access an attribute held within image_rect.
         self.image_rect.midbottom = self.screen_rect.midbottom
 
         self.x = float(self.image_rect.x)
