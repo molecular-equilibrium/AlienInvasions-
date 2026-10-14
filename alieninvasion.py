@@ -26,8 +26,8 @@ class AlienInvasion:
         # Remember how module imports work?
         # You can always access them directly
         # when you give the name of the module.
-        # mixer.music.load('audio/astronauts-symphony.mp3')
-        # mixer.music.play(-1)
+        mixer.music.load('audio/arcade.mp3')
+        mixer.music.play(-1)
         self.settings = Settings()
 
         # This is what creates the dimensions for the pygame game
